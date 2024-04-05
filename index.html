@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Notes App</title>
+
+        <!-- Favicon-->
+        <link rel="icon" href="notepad.png" sizes="512x512" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header>
+            <header-bar></header-bar>
+        </header>
+        <main>
+            <div class="container">
+                <section id="note" class="note">
+                    <div id="searchBarContainer" class="search-bar-container">
+                        <search-bar></search-bar>
+                    </div>
+
+                    <div id="noteFormContainer" class="note-form-container">
+                        <notes-form></notes-form>
+                    </div>
+
+                    <div class="title-list">
+                        <title-note-list></title-note-list>
+                    </div>
+
+                    <div class="title-unarchived">
+                        <title-unarchived></title-unarchived>
+                    </div>
+
+                    <div id="noteListContainer" class="note-list-container">
+                        <div class="placeholder query-waiting">
+                            Waiting for search keyword's note
+                        </div>
+                        <div class="placeholder search-loading">Loading</div>
+
+                        <notes-list></notes-list>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <footer-app></footer-app>
+        </footer>
+    </body>
+</html>

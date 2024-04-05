@@ -1,0 +1,7 @@
+import './header-bar.js'
+import './footer-app.js'
+// import './search-bar.js'
+import './notes-form.js'
+import './title-note-list.js'
+import './notes-list.js'
+import './notes-item.js'
